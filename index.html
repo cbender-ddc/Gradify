@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purple to Black Gradient Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Purple to Black Gradient Generator</h1>
+        
+        <div class="controls">
+            <div class="control-group">
+                <label for="startColor">Start Color:</label>
+                <input type="color" id="startColor" value="#4000B8">
+            </div>
+            <div class="control-group">
+                <label for="endColor">End Color:</label>
+                <input type="color" id="endColor" value="#000000">
+            </div>
+            <div class="control-group">
+                <label for="steps">Number of Steps:</label>
+                <input type="number" id="steps" value="22" min="2" max="100">
+            </div>
+        </div>
+        
+        <div class="gradient-display">
+            <div class="gradient-bar" id="gradientBar">
+                Perfect Gradient Preview
+            </div>
+        </div>
+        
+        <button class="copy-all" onclick="copyAllColors()">📋 Copy All Color Codes</button>
+        
+        <div class="colors-grid" id="colorsGrid">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
